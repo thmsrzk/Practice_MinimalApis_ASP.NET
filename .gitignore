@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+.vs
+
+# portfolio.client (Next.js)
+portfolio.client/.next/
+portfolio.client/node_modules/
+portfolio.client/src/data/
+portfolio.client/.env.local
+portfolio.client/.env.development.local
+portfolio.client/.env.test.local
+portfolio.client/.env.production.local
+
+# portfolio.server (ASP.NET)
+portfolio.server/bin/
+portfolio.server/obj/
+portfolio.server/.vs/
+portfolio.server/.vscode/
+portfolio.server/*.nupkg
+portfolio.server/*.snupkg
+portfolio.server/*.dll
+portfolio.server/*.exe
+portfolio.server/*.pdb
+portfolio.server/*.cache
+portfolio.server/*.csproj.user
+portfolio.server/*.dbmdl
+portfolio.server/*.bak
+portfolio.server/*.tmp
