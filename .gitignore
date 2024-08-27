@@ -1,63 +1,98 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Visual Studio
+.vscode/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
 
-# testing
-/coverage
+# User-specific files
+*.rsuser
+*.resharper
+*.swp
+*.sln.docstates
+*.userprefs
 
-# next.js
-/.next/
-/out/
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
 
-# production
-/build
+# Entity Framework Core
+*.efmodel/
+*.efconfig/
+*.dbmdl
+*.jfm
 
-# misc
-.DS_Store
-*.pem
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# NuGet packages
+*.nupkg
+**/packages/*
 
-# local env files
-.env*.local
+# npm packages
+node_modules/
 
-# vercel
-.vercel
+# Publish output
+publish/
+*.Publish.xml
+*.PublishSettings
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Azure Functions artifacts
+local.settings.json
+FunctionAppLogs/
+**/test-results/
+**/*.apphost.exe
 
-.vs
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# portfolio.client (Next.js)
-portfolio.client/.next/
-portfolio.client/node_modules/
-portfolio.client/src/data/
-portfolio.client/.env.local
-portfolio.client/.env.development.local
-portfolio.client/.env.test.local
-portfolio.client/.env.production.local
+# Web.config & appsettings files
+web.config
+appsettings*.json
 
-# portfolio.server (ASP.NET)
-portfolio.server/bin/
-portfolio.server/obj/
-portfolio.server/.vs/
-portfolio.server/.vscode/
-portfolio.server/*.nupkg
-portfolio.server/*.snupkg
-portfolio.server/*.dll
-portfolio.server/*.exe
-portfolio.server/*.pdb
-portfolio.server/*.cache
-portfolio.server/*.csproj.user
-portfolio.server/*.dbmdl
-portfolio.server/*.bak
-portfolio.server/*.tmp
+# Rider
+.idea/
+.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/.idea
+.idea/libraries/
+.idea/.name
+.idea/.idea/workspace.xml
+.idea/.idea/tasks.xml
+.idea/.idea/dictionaries
+.idea/.idea/vcs.xml
+.idea/.idea/jsLibraryMappings.xml
+.idea/.idea/modules.xml
+.idea/.idea/*.iml
+.idea/.idea/.name
+.idea/.idea/.idea
+
+# Resharper
+_ReSharper*/
+*.ReSharper
+
+# JetBrains Rider
+.idea/
+*.sln.iml
