@@ -3,11 +3,7 @@ using MinimalApis;
 
 var builder = WebApplication.CreateBuilder();
 
-var list = new List<Article>
-{
-    new Article(1, "Marteau"),
-    new Article(2, "Scie")
-};
+builder.Services.AddSingleton<ArticleService>();
 
 var app = builder.Build();
 
@@ -21,12 +17,19 @@ app.MapMethods("/methods", new[] { "GET", "POST" }, () => "Hello methods!");
 
 app.MapGet("/article", () => new Article(1, "Marteau"));
 
-app.MapGet("/articles/{id}", (int id) =>
+app.MapGet("/articles/{id:int}", (int id, 
+    [FromServices] ArticleService service) =>
 {
-    var article = list.Find(a => a.Id == id);
+    var article = service.GetAll().Find(a => a.Id == id);
     if (article != null) return Results.Ok(article);
 
     return Results.NotFound();
+});
+app.MapPost("/articles", (Article a,
+    [FromServices] ArticleService service) =>
+{
+    var result = service.Add(a.Title);
+    return Results.Ok();
 });
 
 app.MapGet("/personne/{nom}", (
